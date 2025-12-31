@@ -173,7 +173,27 @@
         .skill-item:hover { transform: translateY(-5px); border-color: #ff8a80; }
         .skill-name { margin: 10px 0 5px 0; font-weight: bold; font-size: 18px; color: #fff; }
         .skill-badge { font-size: 12px; padding: 4px 10px; border-radius: 12px; background: rgba(255, 255, 255, 0.08); color: #bbb; border: 1px solid rgba(255, 255, 255, 0.1); }
-        .skill-desc { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(20, 10, 10, 0.95); border-radius: 20px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 15px; box-sizing: border-box; font-size: 14px; color: #ffcdc9; opacity: 0; transition: 0.3s; line-height: 1.5; border: 1px solid #ff8a80; }
+        .skill-desc {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(20, 10, 10, 0.95);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #ffcdc9;
+            opacity: 0;
+            transition: 0.3s;
+            line-height: 1.6;
+            border: 1px solid #ff8a80;
+        }
         .skill-item:hover .skill-desc { opacity: 1; }
 
         .project-list { display: flex; flex-direction: column; gap: 30px; }
@@ -262,11 +282,11 @@
                     <li style="flex-direction: column; gap: 8px;">
                         <div style="display: flex; justify-content: space-between; width: 100%;">
                             <span style="font-weight: bold; color: #ffffffd2;">MBC아카데미컴퓨터교육센터 (게임 개발반)</span>
-                            <span class="spec-date">2025.12.22 ~ 2026.08.00</span>
+                            <span class="spec-date">2025.12.29 ~ 2026.08.13</span>
                         </div>
                         <div style="display: flex; justify-content: space-between; width: 100%;">
                             <span style="font-weight: bold; color: #ffffffd2;">MBC아카데미컴퓨터교육센터 (AI 심화반)</span>
-                            <span class="spec-date">2025.10.29 ~ 2025.12.19</span>
+                            <span class="spec-date">2025.10.29 ~ 2025.12.23</span>
                         </div>
                         <div style="display: flex; justify-content: space-between; width: 100%;">
                             <span style="font-weight: bold; color: #ffffffd2;">상명대학교 소프트웨어학과</span>
@@ -337,30 +357,58 @@
 
         <section id="tech">
             <h2>Tech Stack & Expertise</h2>
-            <h3 class="sub-title" style="margin-top:0;">Languages & Engine</h3>
+            <h3 class="sub-title" style="margin-top:0;">Languages</h3>
             <div class="tech-grid">
                 <div class="glass-panel skill-item">
-                    <span style="font-size:35px">🐍</span><span class="skill-name">Python</span><span class="skill-badge">Experienced</span>
-                    <div class="skill-desc">기본 문법 및<br>머신러닝 프로젝트 경험</div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">Python</span><span class="skill-badge">Experienced</span>
+                    <div class="skill-desc">- 기본 문법<br>- 머신러닝 프로젝트 경험</div>
                 </div>
                 <div class="glass-panel skill-item">
-                    <span style="font-size:35px">☕</span><span class="skill-name">C#</span><span class="skill-badge">Learning</span>
-                    <div class="skill-desc">객체 지향 개념(OOP) 이해 및<br>기본 알고리즘 구현</div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">C</span><span class="skill-badge">university</span>
+                    <div class="skill-desc">- 기본 문법<br>- 기본 알고리즘 구현</div>
                 </div>
                 <div class="glass-panel skill-item">
-                    <span style="font-size:35px">🎮</span><span class="skill-name">Unity</span><span class="skill-badge">Project</span>
-                    <div class="skill-desc">인터랙티브 콘텐츠 기획 및<br>게임 로직 스크립팅</div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">C++</span><span class="skill-badge">Learning</span>
+                    <div class="skill-desc">- 기본 문법</div>
+                </div>
+                <div class="glass-panel skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">C#</span><span class="skill-badge">Learning</span>
+                    <div class="skill-desc">아직<br>yet</div>
+                </div>
+            </div>
+            <h3 class="sub-title">Engine</h3>
+            <div class="tech-grid">
+                <div class="glass-panel skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="Unity" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">Unity</span><span class="skill-badge">Project</span>
+                    <div class="skill-desc">yet<br>yet</div>
                 </div>
             </div>
             <h3 class="sub-title">Tools</h3>
             <div class="tech-grid">
                 <div class="glass-panel skill-item">
-                    <span style="font-size:35px">🐱</span><span class="skill-name">Git/GitHub</span><span class="skill-badge">Basic</span>
-                    <div class="skill-desc">프로젝트 버전 관리 및<br>협업 기초</div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px; filter: invert(1);">
+                    <span class="skill-name">GitHub</span><span class="skill-badge">Basic</span>
+                    <div class="skill-desc">- 프로젝트 버전 관리<br>- 협업 기초</div>
                 </div>
                 <div class="glass-panel skill-item">
-                    <span style="font-size:35px">🆚</span><span class="skill-name">VS Code</span><span class="skill-badge">Learning</span>
-                    <div class="skill-desc">개발 환경 세팅 및<br>디버깅 도구 활용</div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sourcetree/sourcetree-original.svg" alt="SourceTree" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">SourceTree</span><span class="skill-badge">Basic</span>
+                    <div class="skill-desc">- Git 대용<br>- 협업 기초</div>
+                </div>
+                <div class="glass-panel skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">VS Code</span><span class="skill-badge">Experienced</span>
+                    <div class="skill-desc">- 개발 환경 세팅 및<br>- 디버깅 도구 활용</div>
+                </div>
+                <div class="glass-panel skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" alt="VisualStudio" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 5px;">
+                    <span class="skill-name">VisualStudio</span><span class="skill-badge">Experienced</span>
+                    <div class="skill-desc">- 개발 환경 세팅 및<br>- 디버깅 도구 활용</div>
                 </div>
             </div>
         </section>
@@ -369,13 +417,18 @@
             <h2>Projects</h2>
             <div class="project-list">
                 <div class="glass-panel project-card">
-                    <div class="card-img">게임 이미지</div>
+                    <div class="card-img">
+                        <img src="data\virtualKeyboard_image.jpg" alt="프로젝트 스크린샷"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                     <div class="card-content">
                         <h3>웹 기반 가상 키보드</h3>
                         <p>물리적 키보드 없이 웹캠만으로 키 입력이 가능한 웹 애플리케이션입니다.</p>
                         <div class="tag-container">
                             <span class="tag">Python</span><span class="tag">Roboflow</span><span class="tag">mediapipe</span>
-                            <span class="tag">Ultralytics</span><span class="tag">OpenCV</span>
+                            <span class="tag">Ultralytics</span><span class="tag">CUDA</span><span class="tag">OpenCV</span>
+                            <span class="tag">NumPy</span><span class="tag">ArucoMarker</span><span class="tag">PyTorch</span>
+                            <span class="tag">SQLite</span><span class="tag">Flask</span><span class="tag">npm</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/gasujina-prog/virtual-keyboard-project.git" target="_blank" class="link-btn"><span>🐱</span> GitHub</a>
